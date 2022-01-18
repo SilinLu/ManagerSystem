@@ -3,7 +3,6 @@ import java.io.Serializable;
 public class User implements Serializable{
     private String id;
     private String password;
-    private static final long serialVersionUID = 1L;
     public String getId() {
         return id;
     }
