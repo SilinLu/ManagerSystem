@@ -3,9 +3,10 @@ package lsl.managersystem.domain;
 public class Good {
     private String name;
     private float unitPrice;
-    private String type;
+    private float costPrice;
+    private Tag tag;
     private int id;
-
+    private int quantity;
     public String getName() {
         return name;
     }
@@ -22,12 +23,12 @@ public class Good {
         this.unitPrice = unitPrice;
     }
 
-    public String getType() {
-        return type;
+    public Tag getTag() {
+        return tag;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTag(Tag tag) {
+        this.tag = tag;
     }
 
     public int getId() {
@@ -36,5 +37,21 @@ public class Good {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public float getCostPrice() {
+        return costPrice;
+    }
+
+    public void setCostPrice(float costPrice) {
+        this.costPrice = costPrice;
     }
 }

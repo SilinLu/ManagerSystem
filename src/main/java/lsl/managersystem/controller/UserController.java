@@ -21,24 +21,6 @@ public class UserController {
     UserService UserService;
     @Autowired
     TokenService tokenService;
-    @RequestMapping("/insert")
-    public String insertUser(User User){
-        UserService.insertUser(User);
-        return "ok";
-    }
-    @RequestMapping("/id")
-    public User queryid(String id){
-        return UserService.queryid(id);
-    }
-    @RequestMapping("/query")
-    public List<User> query(){
-        return UserService.query();
-    }
-    @GetMapping(value = "/test")
-    public String testUser(){
-        return "ok";
-    }
-
     @PostMapping("/login")
     @ResponseBody
     public ResponseData login(User user) {
